@@ -1,0 +1,41 @@
+{
+  "name": "tasks-api",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "pnpm run lint --fix .",
+    "drizzle:studio": "pnpm drizzle-kit studio",
+    "db:generate": "pnpm drizzle-kit generate",
+    "db:migrate": "pnpm drizzle-kit migrate",
+    "db:push": "pnpm drizzle-kit push",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@asteasolutions/zod-to-openapi": "^7.3.0",
+    "@hono/node-server": "^1.14.0",
+    "@hono/zod-openapi": "^0.19.2",
+    "@scalar/hono-api-reference": "^0.7.3",
+    "dotenv": "^16.4.7",
+    "dotenv-expand": "^12.0.1",
+    "drizzle-orm": "^0.41.0",
+    "drizzle-zod": "^0.7.1",
+    "hono": "^4.7.5",
+    "hono-pino": "^0.8.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "postgres": "^3.4.5",
+    "stoker": "^1.4.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.10.2",
+    "@types/node": "^20.11.17",
+    "drizzle-kit": "^0.30.6",
+    "eslint": "^9.22.0",
+    "eslint-plugin-format": "^1.0.1",
+    "tsx": "^4.19.3",
+    "vitest": "^3.0.9"
+  }
+}
